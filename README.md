@@ -3,7 +3,7 @@
 Templates of Docker projects for Data Science and coding projects
 
 
-### data-science-exploratory
+## data-science-exploratory
 
 **Description:** A simple folder structure meant for exploratory projects. Contains pyspark Jupyter notebook.
 
@@ -22,7 +22,7 @@ Directory structure:
 
 \* Dockerfile inherited from [pyspark-jupyter-notebook](https://hub.docker.com/r/jupyter/pyspark-notebook/)
 
-### data-science-cloud
+## data-science-cloud
 
 **Description:** For more complex data science projects that involve creation of python modules. Spark included by default.
 
@@ -42,7 +42,7 @@ Directory structure:
 \* Dockerfile inherited from [jupyter/pyspark-jupyter-notebook](https://hub.docker.com/r/jupyter/pyspark-notebook/)
 
 
-### data-science-full
+## data-science-full
 
 **Description:** For more complex data science projects that involve creation of python modules. Spark included by default.
 
