@@ -17,5 +17,5 @@ services:
       - ${JUPYTER_EXTERNAL_PORT}:8888
       - ${SPARK_MASTER_WEBUI_PORT}:8080
       - ${SPARK_MASTER_PORT}:7077
-    image: zenvia_research:${RESEARCH_TAG}
-    container_name: zenvia_research_${RESEARCH_TAG}
+    image: ds-exploratory
+    container_name: ds-exploratory-${NAME-TAG}
