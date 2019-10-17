@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+  research:
+    build: research
+    volumes:
+      - ./research:/mnt/code
+      - ${DATA_VOLUME}:/mnt/data
+    environment:
+      TIMEZONE: America/Sao_Paulo
+      SPARK_PUBLIC_DNS: ${SPARK_PUBLIC_DNS}
+      SPARK_MASTER_PORT: ${SPARK_MASTER_PORT}
+      SPARK_WORKER_WEBUI_PORT: ${SPARK_WORKER_PORT}
+    ports:
+      - ${SPARK_WORKER_PORT}:8081
+      - ${SPARK_APPLICATION_PORT}:4040
+      - ${JUPYTER_EXTERNAL_PORT}:8888
+      - ${SPARK_MASTER_WEBUI_PORT}:8080
+      - ${SPARK_MASTER_PORT}:7077
+    image: zenvia_research:${RESEARCH_TAG}
+    container_name: zenvia_research_${RESEARCH_TAG}
