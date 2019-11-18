@@ -14,7 +14,7 @@ services:
     ports:
       - ${SPARK_WORKER_PORT}:8081
       - ${SPARK_APPLICATION_PORT}:4040
-      - ${JUPYTER_EXTERNAL_PORT}:8888
+      - ${JUPYTER_EXTERNAL_PORT}:${JUPYTER_EXTERNAL_PORT}
       - ${SPARK_MASTER_WEBUI_PORT}:8080
       - ${SPARK_MASTER_PORT}:7077
     image: ds-exploratory
