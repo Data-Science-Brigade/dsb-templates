@@ -3,6 +3,8 @@ version: "3.5"
 services:
   research:
     build: research
+    args:
+      JUPYTER_EXTERNAL_PORT: ${JUPYTER_EXTERNAL_PORT}
     volumes:
       - ./research:/mnt/code
       - ${DATA_VOLUME}:/mnt/data
@@ -18,4 +20,4 @@ services:
       - ${SPARK_MASTER_WEBUI_PORT}:8080
       - ${SPARK_MASTER_PORT}:7077
     image: ds-exploratory
-    container_name: ds-exploratory-${NAME-TAG}
+    container_name: ds-exploratory-${CONTAINER_TAG}
