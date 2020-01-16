@@ -1,0 +1,9 @@
+export YARN_CONF_DIR=/usr/hadoop-3.0.0/etc/hadoop
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export HDFS_NAMENODE_USER=root
+export HDFS_DATANODE_USER=root
+export HDFS_SECONDARYNAMENODE_USER=root
+export YARN_RESOURCEMANAGER_USER=root
+export YARN_NODEMANAGER_USER=root
+export HADOOP_LOG_DIR=/var/log/hadoop/
+export HADOOP_PID_DIR=/var/log/hadoop-pid
