@@ -5,7 +5,6 @@ COPY conf/jars/* $SPARK_HOME/jars/
 COPY conf/hadoop/ $HADOOP_CONF_DIR/
 
 WORKDIR /mnt/code
-COPY Makefile Makefile
 
 COPY requirements.txt requirements.txt
 RUN pip install --upgrade pip
