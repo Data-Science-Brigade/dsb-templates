@@ -3,6 +3,8 @@ version: "3.5"
 services:
   research:
     build: research
+    args:
+      JUPYTER_EXTERNAL_PORT: ${JUPYTER_EXTERNAL_PORT}
     volumes:
       - ./research:/mnt/code
       - ${DATA_VOLUME}:/mnt/data
