@@ -1,0 +1,12 @@
+# Bibliotecas Python
+numpy==1.15.1
+
+# Bibliotecas R
+
+
+# Bibliotecas Genéricas
+pandas==1.0.1
+
+# Bibliotecas Cloud
+google-cloud-bigquery-storage
+google-cloud-bigquery[pandas]

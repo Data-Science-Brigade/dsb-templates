@@ -16,7 +16,7 @@ services:
     image: nomeprojeto-research
     container_name: nomeprojeto-research-${CONTAINER_TAG}
 
-  processing:
+  processing-test:
     build: processing
     env_file:
       - .env
@@ -27,5 +27,5 @@ services:
     volumes:
       - ./processing:/mnt/code
       - ${DATA_VOLUME}:/mnt/data
-    image: nomeapi-processing
-    container_name: nomeapi-processing-${CONTAINER_TAG}
+    image: nomeapi-processing-test
+    container_name: nomeapi-processing-test-${CONTAINER_TAG}
