@@ -7,6 +7,9 @@ pyspark==2.4.0
 # Bibliotecas Genéricas
 pandas==1.0.1
 
+# Bibliotecas de Logs
+loguru==0.5.1
+
 # Bibliotecas I/O
 
 
