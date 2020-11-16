@@ -1,4 +1,4 @@
-# <Nome-do-Projeto> 
+# <Nome-do-Projeto> - <Nome-da-API>
 
 Esse diretório concentra o código principal da API, contendo:
 
