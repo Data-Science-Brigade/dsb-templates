@@ -1,4 +1,4 @@
-# TiMiT
+# <Nome-do-Projeto> 
 
 Esse diretório concentra o código principal da API, contendo:
 
