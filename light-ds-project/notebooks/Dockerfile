@@ -1,5 +1,5 @@
 # Jupyter pyspark image from https://hub.docker.com/r/datasciencebrigade/jupyter-pyspark-image
-FROM datasciencebrigade/jupyter-pyspark-image:1.2
+FROM datasciencebrigade/jupyter-pyspark-image:1.3
 
 USER jovyan
 
